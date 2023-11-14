@@ -152,7 +152,7 @@ public class UserService {
         return true;
     }
 
-    @SuppressWarnings("methodref.receiver") // checker-issue : stream type refinement (https://github.com/typetools/checker-framework/issues/1345)
+    @SuppressWarnings("optional:methodref.receiver") // checker-issue : stream type refinement (https://github.com/typetools/checker-framework/issues/1345)
     public User createUser(AdminUserDTO userDTO) {
         User user = new User();
         user.setLogin(userDTO.getLogin().toLowerCase());
@@ -195,7 +195,7 @@ public class UserService {
      * @param userDTO user to update.
      * @return updated user.
      */
-    @SuppressWarnings("methodref.receiver") // checker-issue : stream type refinement (https://github.com/typetools/checker-framework/issues/1345)
+    @SuppressWarnings("optional:methodref.receiver") // checker-issue : stream type refinement (https://github.com/typetools/checker-framework/issues/1345)
     public Optional<AdminUserDTO> updateUser(AdminUserDTO userDTO) {
         return Optional
             .of(userRepository.findById(userDTO.getId()))

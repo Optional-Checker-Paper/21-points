@@ -1,0 +1,80 @@
+> Task :spotbugsMain
+M V EI: org.jhipster.health.web.rest.vm.WeightByPeriod.getWeighIns() may expose internal representation by returning WeightByPeriod.weighIns  At WeightByPeriod.java:[line 25]
+M V EI2: new org.jhipster.health.web.rest.vm.WeightByPeriod(String, List) may expose internal representation by storing an externally mutable object into WeightByPeriod.weighIns  At WeightByPeriod.java:[line 13]
+M V EI2: org.jhipster.health.web.rest.vm.WeightByPeriod.setWeighIns(List) may expose internal representation by storing an externally mutable object into WeightByPeriod.weighIns  At WeightByPeriod.java:[line 29]
+M V EI: org.jhipster.health.domain.BloodPressure.getUser() may expose internal representation by returning BloodPressure.user  At BloodPressure.java:[line 107]
+M V EI2: new org.jhipster.health.domain.BloodPressure(ZonedDateTime, Integer, Integer, User) may expose internal representation by storing an externally mutable object into BloodPressure.user  At BloodPressure.java:[line 51]
+M V EI2: org.jhipster.health.domain.BloodPressure.setUser(User) may expose internal representation by storing an externally mutable object into BloodPressure.user  At BloodPressure.java:[line 111]
+M B CT: Exception thrown in class org.jhipster.health.config.LoggingConfiguration at new org.jhipster.health.config.LoggingConfiguration(String, String, JHipsterProperties, ObjectMapper) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  At LoggingConfiguration.java:[line 27]
+M V EI: org.jhipster.health.config.ApplicationProperties.getElasticsearch() may expose internal representation by returning ApplicationProperties.elasticsearch  At ApplicationProperties.java:[line 17]
+M D NP: Possible null pointer dereference in org.jhipster.health.config.DatabaseConfiguration.getValidPortForH2() due to return value of called method  Method invoked at DatabaseConfiguration.java:[line 47]
+M V EI2: new org.jhipster.health.config.AsyncConfiguration(TaskExecutionProperties) may expose internal representation by storing an externally mutable object into AsyncConfiguration.taskExecutionProperties  At AsyncConfiguration.java:[line 29]
+M V EI: org.jhipster.health.domain.Weight.getUser() may expose internal representation by returning Weight.user  At Weight.java:[line 89]
+M V EI2: org.jhipster.health.domain.Weight.setUser(User) may expose internal representation by storing an externally mutable object into Weight.user  At Weight.java:[line 93]
+M V EI2: new org.jhipster.health.domain.Weight(ZonedDateTime, Double, User) may expose internal representation by storing an externally mutable object into Weight.user  At Weight.java:[line 46]
+M V EI: org.jhipster.health.web.rest.vm.PointsPerMonth.getPoints() may expose internal representation by returning PointsPerMonth.points  At PointsPerMonth.java:[line 26]
+M V EI2: org.jhipster.health.web.rest.vm.PointsPerMonth.setPoints(List) may expose internal representation by storing an externally mutable object into PointsPerMonth.points  At PointsPerMonth.java:[line 30]
+M V EI2: new org.jhipster.health.web.rest.vm.PointsPerMonth(YearMonth, List) may expose internal representation by storing an externally mutable object into PointsPerMonth.points  At PointsPerMonth.java:[line 14]
+M V EI2: org.jhipster.health.web.rest.vm.BloodPressureByPeriod.setReadings(List) may expose internal representation by storing an externally mutable object into BloodPressureByPeriod.readings  At BloodPressureByPeriod.java:[line 29]
+M V EI2: new org.jhipster.health.web.rest.vm.BloodPressureByPeriod(String, List) may expose internal representation by storing an externally mutable object into BloodPressureByPeriod.readings  At BloodPressureByPeriod.java:[line 13]
+M V EI: org.jhipster.health.web.rest.vm.BloodPressureByPeriod.getReadings() may expose internal representation by returning BloodPressureByPeriod.readings  At BloodPressureByPeriod.java:[line 25]
+M V EI2: org.jhipster.health.domain.Preferences.setUser(User) may expose internal representation by storing an externally mutable object into Preferences.user  At Preferences.java:[line 89]
+M V EI: org.jhipster.health.domain.Preferences.getUser() may expose internal representation by returning Preferences.user  At Preferences.java:[line 85]
+M V EI: org.jhipster.health.domain.Points.getUser() may expose internal representation by returning Points.user  At Points.java:[line 139]
+M V EI2: org.jhipster.health.domain.Points.setUser(User) may expose internal representation by storing an externally mutable object into Points.user  At Points.java:[line 143]
+M V EI2: new org.jhipster.health.domain.Points(LocalDate, Integer, Integer, Integer, User) may expose internal representation by storing an externally mutable object into Points.user  At Points.java:[line 57]
+M V EI2: new org.jhipster.health.web.rest.UserJWTController(TokenProvider, AuthenticationManagerBuilder) may expose internal representation by storing an externally mutable object into UserJWTController.authenticationManagerBuilder  At UserJWTController.java:[line 30]
+M V EI2: org.jhipster.health.domain.User.setAuthorities(Set) may expose internal representation by storing an externally mutable object into User.authorities  At User.java:[line 200]
+M V EI: org.jhipster.health.domain.User.getAuthorities() may expose internal representation by returning User.authorities  At User.java:[line 196]
+M V EI2: new org.jhipster.health.service.MailService(JHipsterProperties, JavaMailSender, MessageSource, SpringTemplateEngine) may expose internal representation by storing an externally mutable object into MailService.templateEngine  At MailService.java:[line 51]
+M V EI: org.jhipster.health.service.dto.AdminUserDTO.getAuthorities() may expose internal representation by returning AdminUserDTO.authorities  At AdminUserDTO.java:[line 171]
+M V EI2: org.jhipster.health.service.dto.AdminUserDTO.setAuthorities(Set) may expose internal representation by storing an externally mutable object into AdminUserDTO.authorities  At AdminUserDTO.java:[line 175]
+M D NP: Possible null pointer dereference in org.jhipster.health.service.UserService.clearUserCaches(User) due to return value of called method  Method invoked at UserService.java:[line 332]
+M D NP: Possible null pointer dereference in org.jhipster.health.service.UserService.clearUserCaches(User) due to return value of called method  Method invoked at UserService.java:[line 334]
+M V EI2: new org.jhipster.health.web.rest.AccountResource(UserRepository, UserService, MailService) may expose internal representation by storing an externally mutable object into AccountResource.userService  At AccountResource.java:[line 46]
+M V EI2: new org.jhipster.health.config.SecurityConfiguration(TokenProvider, CorsFilter, JHipsterProperties, SecurityProblemSupport) may expose internal representation by storing an externally mutable object into SecurityConfiguration.corsFilter  At SecurityConfiguration.java:[line 40]
+M D NP: Possible null pointer dereference in org.jhipster.health.web.rest.errors.ExceptionTranslator.process(ResponseEntity, NativeWebRequest) due to return value of called method  Dereferenced at ExceptionTranslator.java:[line 86]
+M D NP: Possible null pointer dereference in org.jhipster.health.web.rest.PreferencesResource.getAllPreferences(boolean) due to return value of called method  Dereferenced at PreferencesResource.java:[line 207]
+M V EI2: new org.jhipster.health.web.rest.PublicUserResource(UserSearchRepository, UserService) may expose internal representation by storing an externally mutable object into PublicUserResource.userService  At PublicUserResource.java:[line 36]
+M V EI2: new org.jhipster.health.web.rest.UserResource(UserService, UserRepository, MailService) may expose internal representation by storing an externally mutable object into UserResource.userService  At UserResource.java:[line 91]
+M D UuF: Unused public or protected field: org.jhipster.health.domain.User_.email  In User_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.BloodPressure_.user  In BloodPressure_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.Weight_.user  In Weight_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.Preferences_.id  In Preferences_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.BloodPressure_.systolic  In BloodPressure_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.User_.activated  In User_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.Points_.user  In Points_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.AbstractAuditingEntity_.lastModifiedBy  In AbstractAuditingEntity_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.User_.lastName  In User_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.AbstractAuditingEntity_.lastModifiedDate  In AbstractAuditingEntity_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.User_.activationKey  In User_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.User_.password  In User_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.BloodPressure_.diastolic  In BloodPressure_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.AbstractAuditingEntity_.createdBy  In AbstractAuditingEntity_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.User_.authorities  In User_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.User_.id  In User_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.User_.imageUrl  In User_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.Points_.notes  In Points_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.Weight_.timestamp  In Weight_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.Points_.date  In Points_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.Weight_.id  In Weight_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.Points_.exercise  In Points_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.Preferences_.weeklyGoal  In Preferences_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.BloodPressure_.timestamp  In BloodPressure_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.Points_.meals  In Points_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.User_.firstName  In User_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.Preferences_.weightUnits  In Preferences_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.Authority_.name  In Authority_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.Points_.id  In Points_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.Preferences_.user  In Preferences_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.AbstractAuditingEntity_.createdDate  In AbstractAuditingEntity_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.BloodPressure_.id  In BloodPressure_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.User_.resetDate  In User_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.Points_.alcohol  In Points_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.User_.langKey  In User_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.User_.login  In User_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.User_.resetKey  In User_.java
+M D UuF: Unused public or protected field: org.jhipster.health.domain.Weight_.weight  In Weight_.java
+M V MS: org.jhipster.health.config.StaticResourcesWebConfiguration.RESOURCE_LOCATIONS should be package protected  At StaticResourcesWebConfiguration.java:[line 17]
+M V MS: org.jhipster.health.config.StaticResourcesWebConfiguration.RESOURCE_PATHS should be package protected  At StaticResourcesWebConfiguration.java:[line 22]
+SpotBugs ended with exit code 1

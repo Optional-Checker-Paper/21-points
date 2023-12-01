@@ -22,7 +22,16 @@ plugins {
     id "org.sonarqube"
     id "io.spring.nohttp"
     id "com.github.andygoossens.gradle-modernizer-plugin"
+    id "net.ltgt.errorprone" version "3.1.0"
+
     //jhipster-needle-gradle-plugins - JHipster will add additional gradle plugins here
+}
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    errorprone("com.google.errorprone:error_prone_core:2.23.0")
 }
 
 group = "org.jhipster.health"
@@ -293,6 +302,15 @@ if (project.hasProperty("nodeInstall")) {
         into 'build/node'
     }
     tasks.named("npmSetup").configure { finalizedBy fixedNpm }
+}
+
+tasks.withType(JavaCompile).configureEach {
+  options.errorprone.disableWarningsInGeneratedCode = true
+  options.errorprone.disableAllChecks = true
+  options.errorprone.enable("NullOptional", "NullableOptional",
+    "OptionalMapToOptional", "OptionalNotPresent", "OptionalEquality",
+    "OptionalMapUnusedValue", "OptionalOfRedundantMethod", "UnnecessaryOptionalGet",
+  )
 }
 
 test.dependsOn webapp_test

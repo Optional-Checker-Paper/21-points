@@ -1,0 +1,28 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/src/main/java/org/jhipster/health/web/rest/AccountResource.java</file>
+  <line>125</line>
+  <module>twenty-one-points.main</module>
+  <package>org.jhipster.health.web.rest</package>
+  <entry_point TYPE="method" FQNAME="org.jhipster.health.web.rest.AccountResource void saveAccount(org.jhipster.health.service.dto.AdminUserDTO userDTO)" />
+  <problem_class id="SimplifyOptionalCallChains" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Optional call chain can be simplified</problem_class>
+  <description>Can be replaced with 'isEmpty()'</description>
+  <highlighted_element>isPresent</highlighted_element>
+  <language>JAVA</language>
+  <offset>212</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/src/main/java/org/jhipster/health/web/rest/AccountResource.java</file>
+  <line>182</line>
+  <module>twenty-one-points.main</module>
+  <package>org.jhipster.health.web.rest</package>
+  <entry_point TYPE="method" FQNAME="org.jhipster.health.web.rest.AccountResource void finishPasswordReset(org.jhipster.health.web.rest.vm.KeyAndPasswordVM keyAndPassword)" />
+  <problem_class id="SimplifyOptionalCallChains" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Optional call chain can be simplified</problem_class>
+  <description>Can be replaced with 'isEmpty()'</description>
+  <highlighted_element>isPresent</highlighted_element>
+  <language>JAVA</language>
+  <offset>313</offset>
+  <length>9</length>
+</problem>
+</problems>

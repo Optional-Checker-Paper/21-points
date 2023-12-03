@@ -74,6 +74,8 @@ public class AccountResource {
     @GetMapping("/activate")
     public void activateAccount(@RequestParam(value = "key") String key) {
         Optional<User> user = userService.activateRegistration(key);
+        // intellij-suppression-simplify-optional-call-chains
+        //noinspection SimplifyOptionalCallChains
         if (!user.isPresent()) {
             throw new AccountResourceException("No user was found for this activation key");
         }
@@ -122,6 +124,8 @@ public class AccountResource {
             throw new EmailAlreadyUsedException();
         }
         Optional<User> user = userRepository.findOneByLogin(userLogin);
+        // intellij-suppression-simplify-optional-call-chains
+        //noinspection SimplifyOptionalCallChains
         if (!user.isPresent()) {
             throw new AccountResourceException("User could not be found");
         }
@@ -178,7 +182,8 @@ public class AccountResource {
             throw new InvalidPasswordException();
         }
         Optional<User> user = userService.completePasswordReset(keyAndPassword.getNewPassword(), keyAndPassword.getKey());
-
+        // intellij-suppression-simplify-optional-call-chains
+        //noinspection SimplifyOptionalCallChains
         if (!user.isPresent()) {
             throw new AccountResourceException("No user was found for this reset key");
         }

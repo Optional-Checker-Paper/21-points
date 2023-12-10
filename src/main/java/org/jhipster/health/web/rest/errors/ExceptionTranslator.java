@@ -164,6 +164,7 @@ public class ExceptionTranslator implements ProblemHandling, SecurityAdviceTrait
         return create(ex, problem, request);
     }
 
+    @SuppressWarnings("optional:introduce.eliminate") // introduce-eliminate
     @Override
     public ProblemBuilder prepare(final Throwable throwable, final StatusType status, final URI type) {
         Collection<String> activeProfiles = Arrays.asList(env.getActiveProfiles());

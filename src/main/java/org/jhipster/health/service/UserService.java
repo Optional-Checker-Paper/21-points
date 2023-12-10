@@ -195,7 +195,12 @@ public class UserService {
      * @param userDTO user to update.
      * @return updated user.
      */
-    @SuppressWarnings("optional:methodref.receiver") // stream type refinement : https://github.com/typetools/checker-framework/issues/1345
+    @SuppressWarnings(
+        {
+            "optional:methodref.receiver", // stream type refinement : https://github.com/typetools/checker-framework/issues/1345
+            "optional:optional.nesting", // optional-nesting
+        }
+    )
     public Optional<AdminUserDTO> updateUser(AdminUserDTO userDTO) {
         return Optional
             .of(userRepository.findById(userDTO.getId()))

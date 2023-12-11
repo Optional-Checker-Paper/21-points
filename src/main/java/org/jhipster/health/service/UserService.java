@@ -152,7 +152,7 @@ public class UserService {
         return true;
     }
 
-    @SuppressWarnings("optional:methodref.receiver") // stream type refinement : https://github.com/typetools/checker-framework/issues/1345
+    @SuppressWarnings("optional:methodref.receiver") // Stream.filter(isPresent).map(get)
     public User createUser(AdminUserDTO userDTO) {
         User user = new User();
         user.setLogin(userDTO.getLogin().toLowerCase());
@@ -197,7 +197,7 @@ public class UserService {
      */
     @SuppressWarnings(
         {
-            "optional:methodref.receiver", // stream type refinement : https://github.com/typetools/checker-framework/issues/1345
+            "optional:methodref.receiver", // Stream.filter(isPresent).map(get)
             "optional:optional.nesting", // optional-nesting
         }
     )

@@ -72,10 +72,10 @@ public class TwentyOnePointsApp {
     }
 
     private static void logApplicationStartup(Environment env) {
-        @SuppressWarnings("optional:introduce.eliminate") // introduce-eliminate
+        @SuppressWarnings("optional:introduce.eliminate") // style-introduce-eliminate
         String protocol = Optional.ofNullable(env.getProperty("server.ssl.key-store")).map(key -> "https").orElse("http");
         String serverPort = env.getProperty("server.port");
-        @SuppressWarnings("optional:introduce.eliminate") // introduce-eliminate
+        @SuppressWarnings("optional:introduce.eliminate") // style-introduce-eliminate
         String contextPath = Optional
             .ofNullable(env.getProperty("server.servlet.context-path"))
             .filter(StringUtils::isNotBlank)

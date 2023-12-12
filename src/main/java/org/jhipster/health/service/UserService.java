@@ -198,7 +198,7 @@ public class UserService {
     @SuppressWarnings(
         {
             "optional:methodref.receiver", // Stream.filter(isPresent).map(get)
-            "optional:optional.nesting", // optional-nesting
+            "optional:optional.nesting", // style-optional-nesting
         }
     )
     public Optional<AdminUserDTO> updateUser(AdminUserDTO userDTO) {

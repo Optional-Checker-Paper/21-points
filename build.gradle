@@ -301,12 +301,14 @@ apply plugin: 'org.checkerframework'
 checkerFramework {
   checkers = [
     'org.checkerframework.checker.optional.OptionalChecker',
+    'org.checkerframework.common.util.report.ReportChecker',
   ]
   extraJavacArgs = [
     '-AsuppressWarnings=type.anno.before.modifier,type.anno.before.decl.anno',
     '-AassumePure',
     '-AwarnUnneededSuppressions',
-    '-AassumeAssertionsAreEnabled'
+    '-AassumeAssertionsAreEnabled',
+    "-Astubs=${project.projectDir}/reportoptional.astub",
   ]
   excludeTests = true
 }
@@ -323,3 +325,9 @@ configurations.all {
 test.dependsOn webapp_test
 compileJava.dependsOn processResources
 processResources.dependsOn bootBuildInfo
+
+afterEvaluate {
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << "-Xmaxerrs" << "99999"
+    }
+}

@@ -152,7 +152,6 @@ public class UserService {
         return true;
     }
 
-    @SuppressWarnings("optional:methodref.receiver") // Stream.filter(isPresent).map(get)
     public User createUser(AdminUserDTO userDTO) {
         User user = new User();
         user.setLogin(userDTO.getLogin().toLowerCase());

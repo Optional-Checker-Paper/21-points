@@ -1,0 +1,1309 @@
+> Task :bootBuildInfo
+> Task :createCheckerFrameworkManifest
+> Task :nodeSetup UP-TO-DATE
+> Task :fixedNode
+> Task :npmSetup UP-TO-DATE
+> Task :npmInstall UP-TO-DATE
+> Task :fixedNpm
+
+> Task :webapp
+
+> 21-points@7.0.2 webapp:build
+> npm run clean-www && npm run webapp:build:dev
+
+
+> 21-points@7.0.2 clean-www
+> rimraf build/resources/main/static/app/{src,build/}
+
+
+> 21-points@7.0.2 webapp:build:dev
+> ng build --configuration development
+
+- Generating browser application bundles (phase: setup)...
+DeprecationWarning: 'getMutableClone' has been deprecated since v4.0.0. Use an appropriate `factory.update...` method instead, use `setCommentRange` or `setSourceMapRange`, and avoid setting `parent`.
+✔ Browser application bundle generation complete.
+✔ Browser application bundle generation complete.
+- Copying assets...
+✔ Copying assets complete.
+- Generating index html...
+✔ Index html generation complete.
+
+Initial Chunk Files                                                     | Names                                  |  Raw Size
+polyfills.js                                                            | polyfills                              | 962.48 kB |
+
+styles.css                                                              | styles                                 | 251.13 kB |
+runtime.js                                                              | runtime                                |  12.48 kB |
+main.js                                                                 | main                                   | 800 bytes |
+
+| Initial Total                          |   1.20 MB
+Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/app/admin/docs/docs.component.scss' imports '~bootstrap/scss/functions' with a tilde. Usage of '~' in imports is deprecated.
+
+
+Lazy Chunk Files                                                        | Names                                  |  Raw Size
+src_main_webapp_bootstrap_ts.js                                         | bootstrap                              |   6.37 MB |
+src_main_webapp_app_account_account_module_ts.js                        | account-account-module                 | 180.87 kB |
+src_main_webapp_app_admin_metrics_metrics_module_ts.js                  | metrics-metrics-module                 | 172.81 kB |
+src_main_webapp_app_admin_user-management_user-management_module_ts.js  | user-management-user-management-module | 115.83 kB |
+src_main_webapp_app_entities_preferences_preferences_module_ts.js       | preferences-preferences-module         | 106.92 kB |
+src_main_webapp_app_entities_points_points_module_ts.js                 | points-points-module                   | 105.64 kB |
+src_main_webapp_app_entities_blood-pressure_blood-pressure_module_ts.js | blood-pressure-blood-pressure-module   |  98.21 kB |
+src_main_webapp_app_entities_weight_weight_module_ts.js                 | weight-weight-module                   |  88.97 kB |
+src_main_webapp_app_admin_admin-routing_module_ts.js                    | admin-admin-routing-module             |  41.07 kB |
+src_main_webapp_app_admin_health_health_module_ts.js                    | health-health-module                   |  30.34 kB |
+src_main_webapp_app_admin_configuration_configuration_module_ts.js      | configuration-configuration-module     |  26.12 kB |
+src_main_webapp_app_admin_logs_logs_module_ts.js                        | logs-logs-module                       |  24.78 kB |
+Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/app/admin/docs/docs.component.scss' imports '~bootstrap/scss/variables' with a tilde. Usage of '~' in imports is deprecated.
+
+Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/app/layouts/navbar/navbar.component.scss' imports '~bootstrap/scss/functions' with a tilde. Usage of '~' in imports is deprecated.
+
+Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/app/layouts/navbar/navbar.component.scss' imports '~bootstrap/scss/variables' with a tilde. Usage of '~' in imports is deprecated.
+
+Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/content/scss/global.scss' imports '~bootstrap/scss/functions' with a tilde. Usage of '~' in imports is deprecated.
+
+Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/content/scss/global.scss' imports '~bootstrap/scss/variables' with a tilde. Usage of '~' in imports is deprecated.
+
+Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/content/scss/vendor.scss' imports '~bootstrap/scss/bootstrap' with a tilde. Usage of '~' in imports is deprecated.
+
+Warning: /tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/app/history/history.component.ts depends on 'date-fns'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/content/scss/global.scss' imports '~angular-calendar/scss/angular-calendar' with a tilde. Usage of '~' in imports is deprecated.
+
+src_main_webapp_app_login_login_module_ts.js                            | login-login-module                     |  17.83 kB |
+common.js                                                               | common                                 |   6.91 kB |
+src_main_webapp_app_admin_docs_docs_module_ts.js                        | docs-docs-module                       |   4.74 kB |
+
+src_main_webapp_app_entities_entity-routing_module_ts.js                | entities-entity-routing-module         |   3.58 kB |
+
+Build at: 2023-12-14T19:29:14.149Z - Hash: 00c7824225fc9ba9 - Time: 15075ms
+
+> Task :processResources
+
+> Task :compileJava
+Note: Hibernate JPA 2 Static-Metamodel Generator 5.6.10.Final
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/PointsRepository.java:23: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    default Optional<Points> findOneWithEagerRelationships(Long id) {
+                             ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/PointsRepository.java:23: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    default Optional<Points> findOneWithEagerRelationships(Long id) {
+                             ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/PointsRepository.java:24: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return this.findOneWithToOneRelationships(id);
+                                                 ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/PointsRepository.java:45: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    Optional<Points> findOneWithToOneRelationships(@Param("id") Long id);
+                     ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/PreferencesRepository.java:17: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    default Optional<Preferences> findOneWithEagerRelationships(Long id) {
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/PreferencesRepository.java:17: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    default Optional<Preferences> findOneWithEagerRelationships(Long id) {
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/PreferencesRepository.java:18: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return this.findOneWithToOneRelationships(id);
+                                                 ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/PreferencesRepository.java:39: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    Optional<Preferences> findOneWithToOneRelationships(@Param("id") Long id);
+                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/PreferencesRepository.java:41: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    Optional<Preferences> findOneByUserLogin(String login);
+                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/WeightRepository.java:21: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    default Optional<Weight> findOneWithEagerRelationships(Long id) {
+                             ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/WeightRepository.java:21: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    default Optional<Weight> findOneWithEagerRelationships(Long id) {
+                             ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/WeightRepository.java:22: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return this.findOneWithToOneRelationships(id);
+                                                 ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/WeightRepository.java:43: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    Optional<Weight> findOneWithToOneRelationships(@Param("id") Long id);
+                     ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/search/PreferencesSearchRepository.java:60: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+        repository.findOneWithEagerRelationships(entity.getId()).ifPresent(elasticsearchTemplate::save);
+                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/search/PreferencesSearchRepository.java:60: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+        repository.findOneWithEagerRelationships(entity.getId()).ifPresent(elasticsearchTemplate::save);
+                                                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/search/PointsSearchRepository.java:67: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+        repository.findOneWithEagerRelationships(entity.getId()).ifPresent(elasticsearchTemplate::save);
+                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/search/PointsSearchRepository.java:67: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+        repository.findOneWithEagerRelationships(entity.getId()).ifPresent(elasticsearchTemplate::save);
+                                                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/search/BloodPressureSearchRepository.java:68: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+        repository.findOneWithEagerRelationships(entity.getId()).ifPresent(elasticsearchTemplate::save);
+                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/search/BloodPressureSearchRepository.java:68: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+        repository.findOneWithEagerRelationships(entity.getId()).ifPresent(elasticsearchTemplate::save);
+                                                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/BloodPressureRepository.java:21: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    default Optional<BloodPressure> findOneWithEagerRelationships(Long id) {
+                                    ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/BloodPressureRepository.java:21: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    default Optional<BloodPressure> findOneWithEagerRelationships(Long id) {
+                                    ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/BloodPressureRepository.java:22: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return this.findOneWithToOneRelationships(id);
+                                                 ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/BloodPressureRepository.java:43: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    Optional<BloodPressure> findOneWithToOneRelationships(@Param("id") Long id);
+                            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/search/WeightSearchRepository.java:67: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+        repository.findOneWithEagerRelationships(entity.getId()).ifPresent(elasticsearchTemplate::save);
+                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/search/WeightSearchRepository.java:67: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+        repository.findOneWithEagerRelationships(entity.getId()).ifPresent(elasticsearchTemplate::save);
+                                                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/UserRepository.java:21: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    Optional<User> findOneByActivationKey(String activationKey);
+                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/UserRepository.java:23: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    Optional<User> findOneByResetKey(String resetKey);
+                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/UserRepository.java:24: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    Optional<User> findOneByEmailIgnoreCase(String email);
+                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/UserRepository.java:25: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    Optional<User> findOneByLogin(String login);
+                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/UserRepository.java:29: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    Optional<User> findOneWithAuthoritiesByLogin(String login);
+                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/repository/UserRepository.java:33: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    Optional<User> findOneWithAuthoritiesByEmailIgnoreCase(String email);
+                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SecurityUtils.java:24: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public static Optional<String> getCurrentUserLogin() {
+                                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SecurityUtils.java:24: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public static Optional<String> getCurrentUserLogin() {
+                                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SecurityUtils.java:26: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return Optional.ofNullable(extractPrincipal(securityContext.getAuthentication()));
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SecurityUtils.java:26: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        return Optional.ofNullable(extractPrincipal(securityContext.getAuthentication()));
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SecurityUtils.java:26: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        return Optional.ofNullable(extractPrincipal(securityContext.getAuthentication()));
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SecurityUtils.java:46: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public static Optional<String> getCurrentUserJWT() {
+                                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SecurityUtils.java:46: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public static Optional<String> getCurrentUserJWT() {
+                                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SecurityUtils.java:51: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+            .map(authentication -> (String) authentication.getCredentials());
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SecurityUtils.java:51: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(authentication -> (String) authentication.getCredentials());
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SecurityUtils.java:51: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(authentication -> (String) authentication.getCredentials());
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SecurityUtils.java:50: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+            .filter(authentication -> authentication.getCredentials() instanceof String)
+                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SecurityUtils.java:50: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+            .filter(authentication -> authentication.getCredentials() instanceof String)
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SecurityUtils.java:49: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+            .ofNullable(securityContext.getAuthentication())
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SecurityUtils.java:49: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+            .ofNullable(securityContext.getAuthentication())
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SpringSecurityAuditorAware.java:15: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<String> getCurrentAuditor() {
+                            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SpringSecurityAuditorAware.java:15: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<String> getCurrentAuditor() {
+                            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SpringSecurityAuditorAware.java:16: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return Optional.of(SecurityUtils.getCurrentUserLogin().orElse(Constants.SYSTEM));
+                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SpringSecurityAuditorAware.java:16: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+        return Optional.of(SecurityUtils.getCurrentUserLogin().orElse(Constants.SYSTEM));
+                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SpringSecurityAuditorAware.java:16: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        return Optional.of(SecurityUtils.getCurrentUserLogin().orElse(Constants.SYSTEM));
+                                                                     ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SpringSecurityAuditorAware.java:16: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        return Optional.of(SecurityUtils.getCurrentUserLogin().orElse(Constants.SYSTEM));
+                                                              ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/SpringSecurityAuditorAware.java:16: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+        return Optional.of(SecurityUtils.getCurrentUserLogin().orElse(Constants.SYSTEM));
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/DomainUserDetailsService.java:42: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+                .orElseThrow(() -> new UsernameNotFoundException("User with email " + login + " was not found in the database"));
+                            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/DomainUserDetailsService.java:42: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+                .orElseThrow(() -> new UsernameNotFoundException("User with email " + login + " was not found in the database"));
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/DomainUserDetailsService.java:41: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                .map(user -> createSpringSecurityUser(login, user))
+                    ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/DomainUserDetailsService.java:41: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                .map(user -> createSpringSecurityUser(login, user))
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/DomainUserDetailsService.java:49: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+            .orElseThrow(() -> new UsernameNotFoundException("User " + lowercaseLogin + " was not found in the database"));
+                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/DomainUserDetailsService.java:49: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+            .orElseThrow(() -> new UsernameNotFoundException("User " + lowercaseLogin + " was not found in the database"));
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/DomainUserDetailsService.java:48: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(user -> createSpringSecurityUser(lowercaseLogin, user))
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/security/DomainUserDetailsService.java:48: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(user -> createSpringSecurityUser(lowercaseLogin, user))
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:61: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<User> activateRegistration(String key) {
+                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:61: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<User> activateRegistration(String key) {
+                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:65: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+            .map(user -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:65: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(user -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:65: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(user -> {
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:76: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<User> completePasswordReset(String newPassword, String key) {
+                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:76: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<User> completePasswordReset(String newPassword, String key) {
+                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:81: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+            .map(user -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:81: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(user -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:81: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(user -> {
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:80: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+            .filter(user -> user.getResetDate().isAfter(Instant.now().minus(1, ChronoUnit.DAYS)))
+                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:80: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+            .filter(user -> user.getResetDate().isAfter(Instant.now().minus(1, ChronoUnit.DAYS)))
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:90: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<User> requestPasswordReset(String mail) {
+                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:90: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<User> requestPasswordReset(String mail) {
+                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:94: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+            .map(user -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:94: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(user -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:94: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(user -> {
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:93: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+            .filter(User::isActivated)
+                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:93: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+            .filter(User::isActivated)
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:105: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+            .ifPresent(existingUser -> {
+                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:105: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+            .ifPresent(existingUser -> {
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:113: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+            .ifPresent(existingUser -> {
+                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:113: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+            .ifPresent(existingUser -> {
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:136: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+        authorityRepository.findById(AuthoritiesConstants.USER).ifPresent(authorities::add);
+                                                                         ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:136: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+        authorityRepository.findById(AuthoritiesConstants.USER).ifPresent(authorities::add);
+                                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:197: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<AdminUserDTO> updateUser(AdminUserDTO userDTO) {
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:197: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<AdminUserDTO> updateUser(AdminUserDTO userDTO) {
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:227: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+            .map(AdminUserDTO::new);
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:227: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(AdminUserDTO::new);
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:227: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(AdminUserDTO::new);
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:202: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(user -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:202: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(user -> {
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:201: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(Optional::get)
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:201: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(Optional::get)
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:200: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+            .filter(Optional::isPresent)
+                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:200: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+            .filter(Optional::isPresent)
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:199: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+            .of(userRepository.findById(userDTO.getId()))
+               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:199: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+            .of(userRepository.findById(userDTO.getId()))
+                                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:199: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+            .of(userRepository.findById(userDTO.getId()))
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:233: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+            .ifPresent(user -> {
+                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:233: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+            .ifPresent(user -> {
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:254: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+            .ifPresent(user -> {
+                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:254: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+            .ifPresent(user -> {
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:253: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>flatMap(java.util.function.Function<? super T,? extends java.util.Optional<? extends U>>) [METHOD]
+            .flatMap(userRepository::findOneByLogin)
+                    ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:253: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>flatMap(java.util.function.Function<? super T,? extends java.util.Optional<? extends U>>) [METHOD]
+            .flatMap(userRepository::findOneByLogin)
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:273: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+            .ifPresent(user -> {
+                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:273: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+            .ifPresent(user -> {
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:272: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>flatMap(java.util.function.Function<? super T,? extends java.util.Optional<? extends U>>) [METHOD]
+            .flatMap(userRepository::findOneByLogin)
+                    ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:272: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>flatMap(java.util.function.Function<? super T,? extends java.util.Optional<? extends U>>) [METHOD]
+            .flatMap(userRepository::findOneByLogin)
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:296: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<User> getUserWithAuthoritiesByLogin(String login) {
+                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:296: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<User> getUserWithAuthoritiesByLogin(String login) {
+                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:297: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return userRepository.findOneWithAuthoritiesByLogin(login);
+                                                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:301: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<User> getUserWithAuthorities() {
+                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:301: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<User> getUserWithAuthorities() {
+                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:302: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return SecurityUtils.getCurrentUserLogin().flatMap(userRepository::findOneWithAuthoritiesByLogin);
+                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:302: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>flatMap(java.util.function.Function<? super T,? extends java.util.Optional<? extends U>>) [METHOD]
+        return SecurityUtils.getCurrentUserLogin().flatMap(userRepository::findOneWithAuthoritiesByLogin);
+                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/service/UserService.java:302: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>flatMap(java.util.function.Function<? super T,? extends java.util.Optional<? extends U>>) [METHOD]
+        return SecurityUtils.getCurrentUserLogin().flatMap(userRepository::findOneWithAuthoritiesByLogin);
+                                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:76: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<User> user = userService.activateRegistration(key);
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:76: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<User> user = userService.activateRegistration(key);
+                                                              ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:77: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (!user.isPresent()) {
+                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:77: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (!user.isPresent()) {
+                 ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:105: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+            .orElseThrow(() -> new AccountResourceException("User could not be found"));
+                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:105: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+            .orElseThrow(() -> new AccountResourceException("User could not be found"));
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:104: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(AdminUserDTO::new)
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:104: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(AdminUserDTO::new)
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:119: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+            .orElseThrow(() -> new AccountResourceException("Current user login not found"));
+                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:119: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+            .orElseThrow(() -> new AccountResourceException("Current user login not found"));
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:120: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<User> existingUser = userRepository.findOneByEmailIgnoreCase(userDTO.getEmail());
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:120: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<User> existingUser = userRepository.findOneByEmailIgnoreCase(userDTO.getEmail());
+                                                                             ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:121: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (existingUser.isPresent() && (!existingUser.get().getLogin().equalsIgnoreCase(userLogin))) {
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:121: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (existingUser.isPresent() && (!existingUser.get().getLogin().equalsIgnoreCase(userLogin))) {
+                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:121: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+        if (existingUser.isPresent() && (!existingUser.get().getLogin().equalsIgnoreCase(userLogin))) {
+                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:121: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+        if (existingUser.isPresent() && (!existingUser.get().getLogin().equalsIgnoreCase(userLogin))) {
+                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:124: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<User> user = userRepository.findOneByLogin(userLogin);
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:124: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<User> user = userRepository.findOneByLogin(userLogin);
+                                                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:125: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (!user.isPresent()) {
+                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:125: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (!user.isPresent()) {
+                 ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:158: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<User> user = userService.requestPasswordReset(mail);
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:158: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<User> user = userService.requestPasswordReset(mail);
+                                                              ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:159: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (user.isPresent()) {
+                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:159: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (user.isPresent()) {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:160: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            mailService.sendPasswordResetMail(user.get());
+                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:160: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            mailService.sendPasswordResetMail(user.get());
+                                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:180: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<User> user = userService.completePasswordReset(keyAndPassword.getNewPassword(), keyAndPassword.getKey());
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:180: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<User> user = userService.completePasswordReset(keyAndPassword.getNewPassword(), keyAndPassword.getKey());
+                                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:182: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (!user.isPresent()) {
+                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/AccountResource.java:182: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (!user.isPresent()) {
+                 ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:88: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            log.debug("No user passed in, using current user: {}", SecurityUtils.getCurrentUserLogin().orElse(""));
+                                                                                                             ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:88: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            log.debug("No user passed in, using current user: {}", SecurityUtils.getCurrentUserLogin().orElse(""));
+                                                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:89: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            weight.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().orElse("")).orElse(null));
+                                                                                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:89: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            weight.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().orElse("")).orElse(null));
+                                                                                                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:89: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            weight.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().orElse("")).orElse(null));
+                                                                                                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:89: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            weight.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().orElse("")).orElse(null));
+                                                                                            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:125: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !weight.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:125: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !weight.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:167: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !weight.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:167: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !weight.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:172: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Weight> result = weightRepository
+                         ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:185: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+            .map(savedWeight -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:185: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(savedWeight -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:185: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(savedWeight -> {
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:184: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(weightRepository::save)
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:184: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(weightRepository::save)
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:174: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(existingWeight -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:174: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(existingWeight -> {
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:192: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+            result,
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:229: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Weight> weight = weightRepository.findOneWithEagerRelationships(id);
+                         ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:229: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Weight> weight = weightRepository.findOneWithEagerRelationships(id);
+                                                                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:232: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+            weight.isPresent() &&
+                            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:232: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+            weight.isPresent() &&
+                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:233: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            weight.get().getUser() != null &&
+                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:233: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            weight.get().getUser() != null &&
+                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:234: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !weight.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:234: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !weight.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                         ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:234: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            !weight.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:234: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            !weight.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:238: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return ResponseUtil.wrapOrNotFound(weight);
+                                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:250: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Weight> weight = weightRepository.findById(id);
+                         ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:250: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Weight> weight = weightRepository.findById(id);
+                                                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:253: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+            weight.isPresent() &&
+                            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:253: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+            weight.isPresent() &&
+                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:254: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            weight.get().getUser() != null &&
+                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:254: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            weight.get().getUser() != null &&
+                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:255: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !weight.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:255: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !weight.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                         ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:255: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            !weight.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:255: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            !weight.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:283: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            queryBuilder = queryBuilder.filter(matchQuery("user.login", SecurityUtils.getCurrentUserLogin().orElse("")));
+                                                                                                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:283: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            queryBuilder = queryBuilder.filter(matchQuery("user.login", SecurityUtils.getCurrentUserLogin().orElse("")));
+                                                                                                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:334: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            .filter(bp -> bp.getUser() != null && bp.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse("")));
+                                                                                                                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/WeightResource.java:334: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            .filter(bp -> bp.getUser() != null && bp.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse("")));
+                                                                                                                    ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:85: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            log.debug("No user passed in, using current user: {}", SecurityUtils.getCurrentUserLogin().orElse(""));
+                                                                                                             ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:85: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            log.debug("No user passed in, using current user: {}", SecurityUtils.getCurrentUserLogin().orElse(""));
+                                                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:86: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            points.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().orElse("")).orElse(null));
+                                                                                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:86: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            points.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().orElse("")).orElse(null));
+                                                                                                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:86: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            points.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().orElse("")).orElse(null));
+                                                                                                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:86: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            points.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().orElse("")).orElse(null));
+                                                                                            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:122: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !points.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:122: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !points.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:164: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !points.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:164: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !points.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:169: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Points> result = pointsRepository
+                         ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:191: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+            .map(savedPoints -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:191: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(savedPoints -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:191: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(savedPoints -> {
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:190: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(pointsRepository::save)
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:190: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(pointsRepository::save)
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:171: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(existingPoints -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:171: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(existingPoints -> {
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:198: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+            result,
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:235: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Points> points = pointsRepository.findOneWithEagerRelationships(id);
+                         ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:235: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Points> points = pointsRepository.findOneWithEagerRelationships(id);
+                                                                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:238: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+            points.isPresent() &&
+                            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:238: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+            points.isPresent() &&
+                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:239: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            points.get().getUser() != null &&
+                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:239: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            points.get().getUser() != null &&
+                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:240: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !points.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:240: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !points.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                         ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:240: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            !points.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:240: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            !points.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:244: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return ResponseUtil.wrapOrNotFound(points);
+                                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:256: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Points> points = pointsRepository.findById(id);
+                         ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:256: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Points> points = pointsRepository.findById(id);
+                                                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:259: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+            points.isPresent() &&
+                            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:259: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+            points.isPresent() &&
+                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:260: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            points.get().getUser() != null &&
+                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:260: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            points.get().getUser() != null &&
+                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:261: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !points.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:261: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !points.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                         ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:261: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            !points.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:261: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            !points.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:289: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            queryBuilder = queryBuilder.filter(matchQuery("user.login", SecurityUtils.getCurrentUserLogin().orElse("")));
+                                                                                                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:289: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            queryBuilder = queryBuilder.filter(matchQuery("user.login", SecurityUtils.getCurrentUserLogin().orElse("")));
+                                                                                                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:309: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            SecurityUtils.getCurrentUserLogin().orElse(null)
+                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:309: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            SecurityUtils.getCurrentUserLogin().orElse(null)
+                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:326: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            SecurityUtils.getCurrentUserLogin().orElse(null)
+                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:326: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            SecurityUtils.getCurrentUserLogin().orElse(null)
+                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:355: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            SecurityUtils.getCurrentUserLogin().orElse("")
+                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PointsResource.java:355: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            SecurityUtils.getCurrentUserLogin().orElse("")
+                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:116: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        } else if (userRepository.findOneByLogin(userDTO.getLogin().toLowerCase()).isPresent()) {
+                                                                                            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:116: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        } else if (userRepository.findOneByLogin(userDTO.getLogin().toLowerCase()).isPresent()) {
+                                                                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:118: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        } else if (userRepository.findOneByEmailIgnoreCase(userDTO.getEmail()).isPresent()) {
+                                                                                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:118: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        } else if (userRepository.findOneByEmailIgnoreCase(userDTO.getEmail()).isPresent()) {
+                                                                              ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:142: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<User> existingUser = userRepository.findOneByEmailIgnoreCase(userDTO.getEmail());
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:142: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<User> existingUser = userRepository.findOneByEmailIgnoreCase(userDTO.getEmail());
+                                                                             ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:143: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (existingUser.isPresent() && (!existingUser.get().getId().equals(userDTO.getId()))) {
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:143: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (existingUser.isPresent() && (!existingUser.get().getId().equals(userDTO.getId()))) {
+                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:143: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+        if (existingUser.isPresent() && (!existingUser.get().getId().equals(userDTO.getId()))) {
+                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:143: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+        if (existingUser.isPresent() && (!existingUser.get().getId().equals(userDTO.getId()))) {
+                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:146: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        existingUser = userRepository.findOneByLogin(userDTO.getLogin().toLowerCase());
+        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:146: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        existingUser = userRepository.findOneByLogin(userDTO.getLogin().toLowerCase());
+                                                    ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:147: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (existingUser.isPresent() && (!existingUser.get().getId().equals(userDTO.getId()))) {
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:147: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (existingUser.isPresent() && (!existingUser.get().getId().equals(userDTO.getId()))) {
+                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:147: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+        if (existingUser.isPresent() && (!existingUser.get().getId().equals(userDTO.getId()))) {
+                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:147: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+        if (existingUser.isPresent() && (!existingUser.get().getId().equals(userDTO.getId()))) {
+                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:150: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<AdminUserDTO> updatedUser = userService.updateUser(userDTO);
+                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:150: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<AdminUserDTO> updatedUser = userService.updateUser(userDTO);
+                                                                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:153: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+            updatedUser,
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:191: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return ResponseUtil.wrapOrNotFound(userService.getUserWithAuthoritiesByLogin(login).map(AdminUserDTO::new));
+                                                                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:191: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+        return ResponseUtil.wrapOrNotFound(userService.getUserWithAuthoritiesByLogin(login).map(AdminUserDTO::new));
+                                                                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/UserResource.java:191: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+        return ResponseUtil.wrapOrNotFound(userService.getUserWithAuthoritiesByLogin(login).map(AdminUserDTO::new));
+                                                                                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:89: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            log.debug("No user passed in, using current user: {}", SecurityUtils.getCurrentUserLogin().orElse(""));
+                                                                                                             ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:89: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            log.debug("No user passed in, using current user: {}", SecurityUtils.getCurrentUserLogin().orElse(""));
+                                                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:90: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            bloodPressure.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().orElse("")).orElse(null));
+                                                                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:90: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            bloodPressure.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().orElse("")).orElse(null));
+                                                                                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:90: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            bloodPressure.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().orElse("")).orElse(null));
+                                                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:90: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            bloodPressure.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().orElse("")).orElse(null));
+                                                                                                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:128: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !bloodPressure.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                                 ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:128: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !bloodPressure.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:170: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !bloodPressure.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                                 ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:170: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !bloodPressure.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:175: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<BloodPressure> result = bloodPressureRepository
+                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:191: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+            .map(savedBloodPressure -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:191: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(savedBloodPressure -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:191: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(savedBloodPressure -> {
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:190: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(bloodPressureRepository::save)
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:190: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(bloodPressureRepository::save)
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:177: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(existingBloodPressure -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:177: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(existingBloodPressure -> {
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:198: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+            result,
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:235: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<BloodPressure> bloodPressure = bloodPressureRepository.findOneWithEagerRelationships(id);
+                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:235: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<BloodPressure> bloodPressure = bloodPressureRepository.findOneWithEagerRelationships(id);
+                                                                                                     ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:238: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+            bloodPressure.isPresent() &&
+                                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:238: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+            bloodPressure.isPresent() &&
+                         ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:239: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            bloodPressure.get().getUser() != null &&
+                             ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:239: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            bloodPressure.get().getUser() != null &&
+                         ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:240: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !bloodPressure.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:240: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !bloodPressure.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:240: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            !bloodPressure.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                              ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:240: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            !bloodPressure.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:244: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return ResponseUtil.wrapOrNotFound(bloodPressure);
+                                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:256: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<BloodPressure> bloodPressure = bloodPressureRepository.findById(id);
+                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:256: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<BloodPressure> bloodPressure = bloodPressureRepository.findById(id);
+                                                                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:259: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+            bloodPressure.isPresent() &&
+                                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:259: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+            bloodPressure.isPresent() &&
+                         ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:260: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            bloodPressure.get().getUser() != null &&
+                             ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:260: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            bloodPressure.get().getUser() != null &&
+                         ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:261: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !bloodPressure.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:261: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !bloodPressure.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:261: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            !bloodPressure.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                              ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:261: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            !bloodPressure.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:289: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            queryBuilder = queryBuilder.filter(matchQuery("user.login", SecurityUtils.getCurrentUserLogin().orElse("")));
+                                                                                                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:289: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            queryBuilder = queryBuilder.filter(matchQuery("user.login", SecurityUtils.getCurrentUserLogin().orElse("")));
+                                                                                                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:310: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            SecurityUtils.getCurrentUserLogin().orElse("")
+                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:310: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            SecurityUtils.getCurrentUserLogin().orElse("")
+                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:332: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            SecurityUtils.getCurrentUserLogin().orElse(null)
+                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/BloodPressureResource.java:332: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            SecurityUtils.getCurrentUserLogin().orElse(null)
+                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:80: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            log.debug("No user passed in, setting preferences for current user: {}", SecurityUtils.getCurrentUserLogin().orElse(""));
+                                                                                                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:80: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            log.debug("No user passed in, setting preferences for current user: {}", SecurityUtils.getCurrentUserLogin().orElse(""));
+                                                                                                                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:81: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            preferences.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().orElse("")).orElse(null));
+                                                                                                                    ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:81: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            preferences.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().orElse("")).orElse(null));
+                                                                                                             ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:81: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            preferences.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().orElse("")).orElse(null));
+                                                                                                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:81: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            preferences.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().orElse("")).orElse(null));
+                                                                                                 ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:120: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !preferences.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:120: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !preferences.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:162: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !preferences.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:162: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !preferences.getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:167: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Preferences> result = preferencesRepository
+                              ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:180: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+            .map(savedPreferences -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:180: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(savedPreferences -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:180: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(savedPreferences -> {
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:179: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(preferencesRepository::save)
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:179: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(preferencesRepository::save)
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:169: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(existingPreferences -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:169: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(existingPreferences -> {
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:187: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+            result,
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:223: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Preferences> preferences = preferencesRepository.findOneWithEagerRelationships(id);
+                              ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:223: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Preferences> preferences = preferencesRepository.findOneWithEagerRelationships(id);
+                                                                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:226: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+            preferences.isPresent() &&
+                                 ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:226: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+            preferences.isPresent() &&
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:227: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            preferences.get().getUser() != null &&
+                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:227: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            preferences.get().getUser() != null &&
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:228: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !preferences.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                                     ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:228: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !preferences.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                              ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:228: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            !preferences.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:228: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            !preferences.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:232: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return ResponseUtil.wrapOrNotFound(preferences);
+                                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:244: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Preferences> preferences = preferencesRepository.findById(id);
+                              ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:244: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Preferences> preferences = preferencesRepository.findById(id);
+                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:247: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+            preferences.isPresent() &&
+                                 ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:247: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+            preferences.isPresent() &&
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:248: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            preferences.get().getUser() != null &&
+                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:248: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            preferences.get().getUser() != null &&
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:249: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !preferences.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                                     ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:249: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            !preferences.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                                                                                              ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:249: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            !preferences.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:249: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            !preferences.get().getUser().getLogin().equals(SecurityUtils.getCurrentUserLogin().orElse(""))
+                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:273: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            queryBuilder = queryBuilder.filter(matchQuery("user.login", SecurityUtils.getCurrentUserLogin().orElse("")));
+                                                                                                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:273: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            queryBuilder = queryBuilder.filter(matchQuery("user.login", SecurityUtils.getCurrentUserLogin().orElse("")));
+                                                                                                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:285: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        String username = SecurityUtils.getCurrentUserLogin().orElse("");
+                                                                    ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:285: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        String username = SecurityUtils.getCurrentUserLogin().orElse("");
+                                                             ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:287: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Preferences> preferences = preferencesRepository.findOneByUserLogin(username);
+                              ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:287: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Preferences> preferences = preferencesRepository.findOneByUserLogin(username);
+                                                                                    ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:289: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (preferences.isPresent()) {
+                                 ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:289: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        if (preferences.isPresent()) {
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:290: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            return new ResponseEntity<>(preferences.get(), HttpStatus.OK);
+                                                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/PreferencesResource.java:290: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+            return new ResponseEntity<>(preferences.get(), HttpStatus.OK);
+                                                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/ElasticsearchIndexResource.java:45: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        log.info("REST request to reindex Elasticsearch by user : {}, all entities", SecurityUtils.getCurrentUserLogin());
+                                                                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/ElasticsearchIndexResource.java:57: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        log.info("REST request to reindex Elasticsearch by user : {}, entities: {}", SecurityUtils.getCurrentUserLogin(), selectedEntities);
+                                                                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:180: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:180: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                                                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:180: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                                                              ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:180: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:180: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:180: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                 ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:180: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:180: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:191: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:191: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                                                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:191: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                                                              ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:191: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:191: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:191: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                 ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:191: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:191: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:202: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:202: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                                                                               ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:202: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                                                              ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:202: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:202: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:202: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                 ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:202: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                           ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:202: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+                        Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:214: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                                                                              ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:214: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                                                                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:214: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:214: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:214: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+                Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                                ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:214: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+                Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                                         ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:214: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+                Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/web/rest/errors/ExceptionTranslator.java:214: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+                Optional.ofNullable(throwable.getCause()).filter(cause -> isCausalChainsEnabled()).map(this::toProblem).orElse(null)
+                        ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/TwentyOnePointsApp.java:75: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        String protocol = Optional.ofNullable(env.getProperty("server.ssl.key-store")).map(key -> "https").orElse("http");
+                                                                                                                 ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/TwentyOnePointsApp.java:75: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        String protocol = Optional.ofNullable(env.getProperty("server.ssl.key-store")).map(key -> "https").orElse("http");
+                                                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/TwentyOnePointsApp.java:75: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+        String protocol = Optional.ofNullable(env.getProperty("server.ssl.key-store")).map(key -> "https").orElse("http");
+                                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/TwentyOnePointsApp.java:75: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+        String protocol = Optional.ofNullable(env.getProperty("server.ssl.key-store")).map(key -> "https").orElse("http");
+                                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/TwentyOnePointsApp.java:75: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        String protocol = Optional.ofNullable(env.getProperty("server.ssl.key-store")).map(key -> "https").orElse("http");
+                                             ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/TwentyOnePointsApp.java:75: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        String protocol = Optional.ofNullable(env.getProperty("server.ssl.key-store")).map(key -> "https").orElse("http");
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/TwentyOnePointsApp.java:80: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            .orElse("/");
+                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/TwentyOnePointsApp.java:80: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            .orElse("/");
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/TwentyOnePointsApp.java:79: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+            .filter(StringUtils::isNotBlank)
+                   ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/TwentyOnePointsApp.java:79: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.filter(java.util.function.Predicate<? super T>) [METHOD]
+            .filter(StringUtils::isNotBlank)
+            ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/TwentyOnePointsApp.java:78: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+            .ofNullable(env.getProperty("server.servlet.context-path"))
+                       ^
+/tmp/experiments/optional-paper-counts-repos/21-points/src/main/java/org/jhipster/health/TwentyOnePointsApp.java:78: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+            .ofNullable(env.getProperty("server.servlet.context-path"))
+            ^
+403 warnings
+
+> Task :generateGitProperties
+> Task :classes
+> Task :bootJarMainClassName
+> Task :bootJar
+> Task :jar
+> Task :assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.4.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 36s
+14 actionable tasks: 11 executed, 3 up-to-date

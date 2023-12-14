@@ -300,7 +300,6 @@ if (project.hasProperty("nodeInstall")) {
 apply plugin: 'org.checkerframework'
 checkerFramework {
   checkers = [
-    'org.checkerframework.checker.optional.OptionalChecker',
     'org.checkerframework.common.util.count.report.ReportChecker',
   ]
   extraJavacArgs = [

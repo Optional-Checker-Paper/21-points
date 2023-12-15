@@ -196,7 +196,7 @@ public class UserService {
      */
     @SuppressWarnings(
         {
-            "optional:methodref.receiver", // Stream.filter(isPresent).map(get)
+            "methodref.receiver", // type inference
             "optional:optional.nesting", // style-optional-nesting
         }
     )

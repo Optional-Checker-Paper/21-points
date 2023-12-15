@@ -29,53 +29,53 @@ DeprecationWarning: 'getMutableClone' has been deprecated since v4.0.0. Use an a
 ✔ Index html generation complete.
 
 Initial Chunk Files                                                     | Names                                  |  Raw Size
-polyfills.js                                                            | polyfills                              | 962.48 kB |
 
+polyfills.js                                                            | polyfills                              | 962.48 kB |
+Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/app/admin/docs/docs.component.scss' imports '~bootstrap/scss/functions' with a tilde. Usage of '~' in imports is deprecated.
 styles.css                                                              | styles                                 | 251.13 kB |
+
 runtime.js                                                              | runtime                                |  12.48 kB |
+Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/app/admin/docs/docs.component.scss' imports '~bootstrap/scss/variables' with a tilde. Usage of '~' in imports is deprecated.
 main.js                                                                 | main                                   | 800 bytes |
 
-| Initial Total                          |   1.20 MB
-Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/app/admin/docs/docs.component.scss' imports '~bootstrap/scss/functions' with a tilde. Usage of '~' in imports is deprecated.
-
-
-Lazy Chunk Files                                                        | Names                                  |  Raw Size
-src_main_webapp_bootstrap_ts.js                                         | bootstrap                              |   6.37 MB |
-src_main_webapp_app_account_account_module_ts.js                        | account-account-module                 | 180.87 kB |
-src_main_webapp_app_admin_metrics_metrics_module_ts.js                  | metrics-metrics-module                 | 172.81 kB |
-src_main_webapp_app_admin_user-management_user-management_module_ts.js  | user-management-user-management-module | 115.83 kB |
-src_main_webapp_app_entities_preferences_preferences_module_ts.js       | preferences-preferences-module         | 106.92 kB |
-src_main_webapp_app_entities_points_points_module_ts.js                 | points-points-module                   | 105.64 kB |
-src_main_webapp_app_entities_blood-pressure_blood-pressure_module_ts.js | blood-pressure-blood-pressure-module   |  98.21 kB |
-src_main_webapp_app_entities_weight_weight_module_ts.js                 | weight-weight-module                   |  88.97 kB |
-src_main_webapp_app_admin_admin-routing_module_ts.js                    | admin-admin-routing-module             |  41.07 kB |
-src_main_webapp_app_admin_health_health_module_ts.js                    | health-health-module                   |  30.34 kB |
-src_main_webapp_app_admin_configuration_configuration_module_ts.js      | configuration-configuration-module     |  26.12 kB |
-src_main_webapp_app_admin_logs_logs_module_ts.js                        | logs-logs-module                       |  24.78 kB |
-Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/app/admin/docs/docs.component.scss' imports '~bootstrap/scss/variables' with a tilde. Usage of '~' in imports is deprecated.
 
 Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/app/layouts/navbar/navbar.component.scss' imports '~bootstrap/scss/functions' with a tilde. Usage of '~' in imports is deprecated.
+| Initial Total                          |   1.20 MB
+
 
 Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/app/layouts/navbar/navbar.component.scss' imports '~bootstrap/scss/variables' with a tilde. Usage of '~' in imports is deprecated.
+Lazy Chunk Files                                                        | Names                                  |  Raw Size
 
-Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/content/scss/global.scss' imports '~bootstrap/scss/functions' with a tilde. Usage of '~' in imports is deprecated.
-
-Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/content/scss/global.scss' imports '~bootstrap/scss/variables' with a tilde. Usage of '~' in imports is deprecated.
-
+src_main_webapp_bootstrap_ts.js                                         | bootstrap                              |   6.37 MB |
 Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/content/scss/vendor.scss' imports '~bootstrap/scss/bootstrap' with a tilde. Usage of '~' in imports is deprecated.
+src_main_webapp_app_account_account_module_ts.js                        | account-account-module                 | 180.87 kB |
 
+src_main_webapp_app_admin_metrics_metrics_module_ts.js                  | metrics-metrics-module                 | 172.81 kB |
 Warning: /tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/app/history/history.component.ts depends on 'date-fns'. CommonJS or AMD dependencies can cause optimization bailouts.
+src_main_webapp_app_admin_user-management_user-management_module_ts.js  | user-management-user-management-module | 115.83 kB |
 For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+src_main_webapp_app_entities_preferences_preferences_module_ts.js       | preferences-preferences-module         | 106.92 kB |
 
+src_main_webapp_app_entities_points_points_module_ts.js                 | points-points-module                   | 105.64 kB |
+Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/content/scss/global.scss' imports '~bootstrap/scss/functions' with a tilde. Usage of '~' in imports is deprecated.
+src_main_webapp_app_entities_blood-pressure_blood-pressure_module_ts.js | blood-pressure-blood-pressure-module   |  98.21 kB |
+
+src_main_webapp_app_entities_weight_weight_module_ts.js                 | weight-weight-module                   |  88.97 kB |
+Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/content/scss/global.scss' imports '~bootstrap/scss/variables' with a tilde. Usage of '~' in imports is deprecated.
+src_main_webapp_app_admin_admin-routing_module_ts.js                    | admin-admin-routing-module             |  41.07 kB |
+
+src_main_webapp_app_admin_health_health_module_ts.js                    | health-health-module                   |  30.34 kB |
 Warning: '/tmp/experiments/optional-paper-counts-repos/21-points/src/main/webapp/content/scss/global.scss' imports '~angular-calendar/scss/angular-calendar' with a tilde. Usage of '~' in imports is deprecated.
+src_main_webapp_app_admin_configuration_configuration_module_ts.js      | configuration-configuration-module     |  26.12 kB |
+
+src_main_webapp_app_admin_logs_logs_module_ts.js                        | logs-logs-module                       |  24.78 kB |
 
 src_main_webapp_app_login_login_module_ts.js                            | login-login-module                     |  17.83 kB |
 common.js                                                               | common                                 |   6.91 kB |
 src_main_webapp_app_admin_docs_docs_module_ts.js                        | docs-docs-module                       |   4.74 kB |
-
 src_main_webapp_app_entities_entity-routing_module_ts.js                | entities-entity-routing-module         |   3.58 kB |
 
-Build at: 2023-12-14T19:29:14.149Z - Hash: 00c7824225fc9ba9 - Time: 15075ms
+Build at: 2023-12-15T03:06:58.031Z - Hash: 7757db9032bdf11e - Time: 15412ms
 
 > Task :processResources
 
@@ -1305,5 +1305,5 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 See https://docs.gradle.org/7.4.2/userguide/command_line_interface.html#sec:command_line_warnings
 
-BUILD SUCCESSFUL in 36s
+BUILD SUCCESSFUL in 43s
 14 actionable tasks: 11 executed, 3 up-to-date

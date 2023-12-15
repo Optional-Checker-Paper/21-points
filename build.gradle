@@ -309,6 +309,7 @@ checkerFramework {
     '-AassumeAssertionsAreEnabled',
     '-AReportChecker_warns',
     "-Astubs=${project.projectDir}/reportoptional.astub",
+    "-Xmaxwarns","99999",
   ]
   excludeTests = true
 }
@@ -326,8 +327,3 @@ test.dependsOn webapp_test
 compileJava.dependsOn processResources
 processResources.dependsOn bootBuildInfo
 
-afterEvaluate {
-    tasks.withType(JavaCompile) {
-        options.compilerArgs << "-Xmaxwarns" << "99999"
-    }
-}

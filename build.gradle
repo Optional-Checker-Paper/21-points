@@ -22,7 +22,6 @@ plugins {
     id "org.sonarqube"
     id "io.spring.nohttp"
     id "com.github.andygoossens.gradle-modernizer-plugin"
-    id 'org.checkerframework' version '0.6.35'
     //jhipster-needle-gradle-plugins - JHipster will add additional gradle plugins here
 }
 
@@ -295,29 +294,6 @@ if (project.hasProperty("nodeInstall")) {
         into 'build/node'
     }
     tasks.named("npmSetup").configure { finalizedBy fixedNpm }
-}
-
-apply plugin: 'org.checkerframework'
-checkerFramework {
-  checkers = [
-    'org.checkerframework.checker.optional.OptionalChecker',
-  ]
-  extraJavacArgs = [
-    '-AsuppressWarnings=type.anno.before.modifier,type.anno.before.decl.anno',
-    '-AassumePure',
-    '-AwarnUnneededSuppressions',
-    '-AassumeAssertionsAreEnabled'
-  ]
-  excludeTests = true
-}
-ext.checkerFrameworkVersion = '3.41.1-SNAPSHOT'
-dependencies {
-  compileOnly "org.checkerframework:checker-qual:${checkerFrameworkVersion}"
-  testCompileOnly "org.checkerframework:checker-qual:${checkerFrameworkVersion}"
-  checkerFramework "org.checkerframework:checker:${checkerFrameworkVersion}"
-}
-configurations.all {
-  resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
 }
 
 test.dependsOn webapp_test
